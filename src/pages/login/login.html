@@ -1,0 +1,26 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<form padding>
+  <ion-title>Sign Up</ion-title>
+  <ion-list>
+    <ion-item>
+      <ion-input placeholder="Username" type="text" value=""></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="Password" type="password"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <button ion-button full class="login-button">Login</button>
+
+  <div class="footer">
+    <p class="signup-message">
+      Don't have an account? <strong (click)="goToSignUp()">Sign Up</strong>
+    </p>
+  </div>
+</form>

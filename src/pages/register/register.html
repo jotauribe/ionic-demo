@@ -1,0 +1,32 @@
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<form padding>
+  <ion-title>Login</ion-title>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Name</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Email</ion-label>
+      <ion-input type="email" value=""></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input placeholder="Password" type="password"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <button ion-button full class="login-button">Login</button>
+
+  <div class="footer">
+    <p class="signup-message">
+      Already have an account? <strong (click)="goToLogin()">Sign In</strong>
+    </p>
+  </div>
+</form>
