@@ -1,13 +1,8 @@
 page-register {
   ion-title {
-    margin-top: 10vh;
-    margin-bottom: 5vh;
+    margin-top: 7.5vh;
+    margin-bottom: 3.5vh;
     text-align: center;
-  }
-
-  ion-content {
-    height: 80%;
-    overflow: hidden !important;
   }
 
   [ion-fixed] {
@@ -15,8 +10,8 @@ page-register {
     width: 100%;
   }
 
-  .login-button {
-    margin-top: 2.5vh;
+  .signup-button {
+    margin-top: 4vh;
   }
 
   .signup-message {

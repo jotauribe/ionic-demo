@@ -5,28 +5,46 @@
   Ionic pages and navigation.
 -->
 
-<form padding>
-  <ion-title>Login</ion-title>
-  <ion-list>
-    <ion-item>
-      <ion-label floating>Name</ion-label>
-      <ion-input type="text" value=""></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label floating>Email</ion-label>
-      <ion-input type="email" value=""></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label floating>Password</ion-label>
-      <ion-input placeholder="Password" type="password"></ion-input>
-    </ion-item>
-  </ion-list>
+<ion-content>
+  <ion-title>Sign Up</ion-title>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" padding>
+    <ion-list>
+      <ion-item>
+        <ion-label floating>Firstname</ion-label>
+        <ion-input formControlName="firstname" type="text" value=""></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Lastname</ion-label>
+        <ion-input formControlName="lastname" type="text" value=""></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Email</ion-label>
+        <ion-input formControlName="email" type="email" value=""></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Telephone</ion-label>
+        <ion-input formControlName="telephone" type="text" value=""></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>City</ion-label>
+        <ion-input formControlName="city" type="text" value=""></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Password</ion-label>
+        <ion-input
+          formControlName="password"
+          placeholder="Password"
+          type="password"
+        ></ion-input>
+      </ion-item>
+    </ion-list>
 
-  <button ion-button full class="login-button">Login</button>
+    <button ion-button full class="signup-button" type="submit">Sign Up</button>
 
-  <div class="footer">
-    <p class="signup-message">
-      Already have an account? <strong (click)="goToLogin()">Sign In</strong>
-    </p>
-  </div>
-</form>
+    <div class="footer">
+      <p class="signup-message">
+        Already have an account? <strong (click)="goToLogin()">Sign In</strong>
+      </p>
+    </div>
+  </form>
+</ion-content>
